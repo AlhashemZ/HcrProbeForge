@@ -1,0 +1,29 @@
+# Python and packaging outputs
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Local environments and editor files
+.venv/
+venv/
+.env
+.DS_Store
+__MACOSX/
+.idea/
+.vscode/
+
+# HCRProbeForge runtime data; never commit user references or results
+hcr_results/
+*.sqlite
+*.sqlite-*
+*.fna
+*.fna.gz
+*.gff
+*.gff3
+*.gff.gz

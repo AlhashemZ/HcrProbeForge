@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hcrprobeforge"
+version = "1.3.7"
+description = "Installable HCR v3 split-initiator probe design, QC, curation, and reporting pipeline"
+readme = "README.md"
+license = "MIT"
+authors = [{name = "Zain Alhashem"}]
+maintainers = [{name = "Zain Alhashem"}]
+requires-python = ">=3.10"
+keywords = ["HCR", "probe design", "bioinformatics", "transcriptomics", "primer design"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Operating System :: MacOS",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+  "requests>=2.31",
+  "pandas>=2.0",
+  "openpyxl>=3.1",
+  "matplotlib>=3.7",
+  "primer3-py>=2.0",
+  "hcrprobedesign>=0.3.5",
+  "biopython>=1.80",
+  "pysam>=0.22",
+  "beautifulsoup4>=4.12",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "build>=1.2", "twine>=5.1"]
+
+[project.scripts]
+hcrprobeforge = "hcrprobeforge.cli:main"
+hcrprobeforge-all-channels = "hcrprobeforge.batch:all_channels_main"
+hcrprobeforge-index = "hcrprobeforge.references:main"
+hcrprobeforge-manifest = "hcrprobeforge.batch:manifest_main"
+hcrprobeforge-web = "hcrprobeforge.webapp:main"
+hcrprobeforge-webapp = "hcrprobeforge.webapp:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+hcrprobeforge = ["assets/*.svg"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

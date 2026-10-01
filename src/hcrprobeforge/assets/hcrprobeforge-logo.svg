@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" preserveAspectRatio="xMinYMid meet" role="img" aria-labelledby="hcrpf-logo-title hcrpf-logo-desc">
+  <title id="hcrpf-logo-title">HCRProbeForge</title>
+  <desc id="hcrpf-logo-desc">HCRProbeForge logo showing two probe halves hybridizing to a transcript</desc>
+  <defs>
+    <linearGradient id="hcrpf-logo-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f7fc"/>
+      <stop offset="1" stop-color="#efecf8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="96" cy="60" r="46" fill="url(#hcrpf-logo-bg)" stroke="#7366a9" stroke-width="4.5"/>
+  <line x1="68" y1="73" x2="124" y2="73" stroke="#34324b" stroke-width="4.5" stroke-linecap="round"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M72 63h17c6 0 6-16 0-16h-13" stroke="#d56b85" stroke-width="4.5" stroke-linejoin="round"/>
+    <path d="M120 63h-17c-6 0-6-16 0-16h13" stroke="#7366a9" stroke-width="4.5" stroke-linejoin="round"/>
+  </g>
+  <g stroke-linecap="round" stroke-width="2" stroke-opacity=".5">
+    <path d="M76 65v5M82 65v5M88 65v5" stroke="#d56b85"/>
+    <path d="M104 65v5M110 65v5M116 65v5" stroke="#7366a9"/>
+  </g>
+  <text x="152.96" y="79.25" fill="#34324b" font-family="Helvetica-Bold, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="38" font-weight="700">HCR</text>
+  <text x="236.28" y="79.25" fill="#7366a9" font-family="Helvetica-Bold, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="38" font-weight="700">Probe</text>
+  <text x="344.96" y="79.25" fill="#d56b85" font-family="Helvetica-Bold, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="38" font-weight="700">Forge</text>
+</svg>

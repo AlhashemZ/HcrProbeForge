@@ -1,0 +1,11 @@
+name: hcrprobe
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - bowtie2
+  - pysam
+  - pip:
+      - .

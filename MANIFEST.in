@@ -1,0 +1,35 @@
+include README.md
+include CONTRIBUTING.md
+include DEVELOPMENT.md
+include CHANGELOG.md
+include VERSION
+include VERSION_HISTORY.md
+include VALIDATION_REPORT.md
+include RELEASE_NOTES.md
+include LICENSE
+include THIRD_PARTY_NOTICES.md
+include CITATION.cff
+include pyproject.toml
+include environment.yml
+recursive-include tests *.py
+recursive-include tools *.py
+recursive-include src/hcrprobeforge/assets *.svg
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude .DS_Store
+global-exclude *.egg-info*
+global-exclude *.egg-info/*
+global-exclude *.sqlite
+global-exclude *.fna
+global-exclude *.fna.gz
+global-exclude *.gff
+global-exclude *.gff3
+global-exclude *.gff.gz
+prune build
+prune build-output
+prune build-output-*
+prune bundle-*
+prune install-check
+prune install-check-*
+prune src/hcrprobeforge.egg-info
+exclude src/hcrprobeforge.egg-info/*
